@@ -5,7 +5,7 @@ Authenticate with the GitHub App and generate the installation token.
 ## Installation
 
 ```
-$ go install github.com/summerwind/gh-app-auth@latest
+$ go install github.com/kanmu/gh-app-auth@latest
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ You can run `gh-app-auth` on GitHub Actions to get a installation token as follo
 
 ```yaml
 - id: gh-app-auth
-  uses: summerwind/gh-app-auth@main
+  uses: kanmu/gh-app-auth@main
   with:
     app-id: 12345
     private-key: ${{ secrets.GH_APP_AUTH_PRIVATE_KEY }}
